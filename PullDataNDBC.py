@@ -1,5 +1,9 @@
 import urllib.request  # the lib that handles the url stuff
 
+# Create a script that reads in the NDBC Buoy data and stores it
+# Then a second to analyze data
+
+
 wspd_str = ''
 wspd_float = []
 gust_str = ''
