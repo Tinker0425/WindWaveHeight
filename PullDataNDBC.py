@@ -9,5 +9,7 @@ for i in Buoy_List:
         # wspd = data[:,6]
         # gst = data[:,7]
         # wvht = data[:,8]
+        # arr = np.where(np.greater(wspd[1], 95), np.nan, wspd[1])
+
         
 
