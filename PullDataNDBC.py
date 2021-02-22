@@ -6,5 +6,8 @@ for i in Buoy_List:
     for j in Year_List:
         data = np.loadtxt("https://www.ndbc.noaa.gov/view_text_file.php?filename="+i+"h"+j+".txt.gz&dir=data/historical/stdmet/", comments='#',skiprows=2)
         print(i + ' ' + j)
+        # wspd = data[:,6]
+        # gst = data[:,7]
+        # wvht = data[:,8]
         
 
