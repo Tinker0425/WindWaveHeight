@@ -3,6 +3,11 @@ import urllib.request  # the lib that handles the url stuff
 # Create a script that reads in the NDBC Buoy data and stores it
 # Then a second to analyze data
 
+# This is what I want because it creates an output array to use:
+import numpy as np
+data = np.loadtxt("https://www.ndbc.noaa.gov/view_text_file.php?filename=46085h2020.txt.gz&dir=data/historical/stdmet/", comments='#',skiprows=2)
+print(data)
+
 
 wspd_str = ''
 wspd_float = []
