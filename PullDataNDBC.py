@@ -8,7 +8,7 @@ wave_str = ''
 k = 0
 
 for line in urllib.request.urlopen('https://www.ndbc.noaa.gov/view_text_file.php?filename=46085h2020.txt.gz&dir=data/historical/stdmet/'):
-    if k > 1 & k < 5:
+    while 1 < k < 5 :
         a = line.decode('utf-8')
         wspd_str = a[21:25]
         wspd_float.append(float(a[21:25]))
@@ -21,4 +21,4 @@ for line in urllib.request.urlopen('https://www.ndbc.noaa.gov/view_text_file.php
 #gust_str = a[26:31]   
 #wave_str = a[31:35]   
 
-#print(wspd_float)
+print(wspd_float)
